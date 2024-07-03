@@ -1425,7 +1425,7 @@ namespace EverLoader
             this.tbCartName.Size = new System.Drawing.Size(231, 23);
             this.tbCartName.TabIndex = 1;
             this.tbCartName.TabStop = false;
-            this.tbCartName.Text = "My Games";
+            this.tbCartName.Text = "EverSD";
             // 
             // lblCartName
             // 

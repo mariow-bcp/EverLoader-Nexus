@@ -5,11 +5,17 @@ slot=${SCRIPT_DIR%????????}
 
 IS_HANDHELD=0
 if [ "$(cat /etc/rootfs_version | grep -i VS)" ]; then
-	IS_HANDHELD=0
+        IS_HANDHELD=0
 elif [ "$(cat /etc/rootfs_version | grep -i 'Super Pocket')" ]; then
-	IS_HANDHELD=1
+        IS_HANDHELD=1
+elif [ "$(cat /etc/rootfs_version | grep -i 'Evercade RootFS')" ]; then
+        if [ "$(cat /sys/class/drm/card0-HDMI-A-1/status | grep -i "disconnected")" ]; then
+                IS_HANDHELD=1
+        else
+                IS_HANDHELD=0
+        fi
 else
-	IS_HANDHELD=1
+        IS_HANDHELD=1
 fi
 
 env \

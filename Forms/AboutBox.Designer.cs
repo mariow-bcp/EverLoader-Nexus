@@ -29,93 +29,117 @@ namespace EverLoader.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            label1 = new System.Windows.Forms.Label();
+            linkLabel1 = new System.Windows.Forms.LinkLabel();
+            lblInfo = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            linkLabel2 = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::EverLoader.Properties.Resources.Logo___EverSD;
-            this.pictureBox1.Location = new System.Drawing.Point(145, 160);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.Logo___EverSD;
+            pictureBox1.Location = new System.Drawing.Point(148, 245);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(114, 67);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 201);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "For news and updates visit";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(74, 300);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(183, 20);
+            label1.TabIndex = 1;
+            label1.Text = "For news and updates visit";
             // 
             // linkLabel1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.Location = new System.Drawing.Point(226, 201);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(70, 15);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "EverSD.com";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            linkLabel1.AutoSize = true;
+            linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            linkLabel1.Location = new System.Drawing.Point(237, 300);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new System.Drawing.Size(88, 20);
+            linkLabel1.TabIndex = 2;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "EverSD.com";
+            linkLabel1.LinkClicked += LinkLabel1_LinkClicked;
             // 
             // lblInfo
             // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(13, 13);
-            this.lblInfo.MaximumSize = new System.Drawing.Size(450, 200);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(363, 135);
-            this.lblInfo.TabIndex = 3;
-            this.lblInfo.Text = resources.GetString("lblInfo.Text");
+            lblInfo.AutoSize = true;
+            lblInfo.Location = new System.Drawing.Point(15, 17);
+            lblInfo.MaximumSize = new System.Drawing.Size(514, 267);
+            lblInfo.Name = "lblInfo";
+            lblInfo.Size = new System.Drawing.Size(374, 200);
+            lblInfo.TabIndex = 3;
+            lblInfo.Text = resources.GetString("lblInfo.Text");
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(13, 230);
-            this.label2.MaximumSize = new System.Drawing.Size(450, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(358, 24);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Disclaimer: EverSD and EverLoader are not affiliated in any way with EVERCADE™.\r\n" +
-    "EverSD does not support or condone piracy.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label2.Location = new System.Drawing.Point(30, 394);
+            label2.MaximumSize = new System.Drawing.Size(514, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(336, 45);
+            label2.TabIndex = 4;
+            label2.Text = "Disclaimer: EverSD and EverLoader are not affiliated in any way\r\nwith Evercade, HyperMegaTech! or Blaze Entertainment Ltd.\r\nEverSD does not support or condone piracy.";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(52, 329);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(176, 20);
+            label3.TabIndex = 5;
+            label3.Text = "Join our Discord server at";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            linkLabel2.Location = new System.Drawing.Point(208, 329);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new System.Drawing.Size(143, 20);
+            linkLabel2.TabIndex = 6;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "EverSD.com/discord";
+            linkLabel2.LinkClicked += LinkLabel2_LinkClicked;
             // 
             // AboutBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 266);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblInfo);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "AboutBox";
-            this.Padding = new System.Windows.Forms.Padding(10);
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "About EverLoader";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(400, 444);
+            Controls.Add(linkLabel2);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(lblInfo);
+            Controls.Add(linkLabel1);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            KeyPreview = true;
+            Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "AboutBox";
+            Padding = new System.Windows.Forms.Padding(11, 13, 11, 13);
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            Text = "About EverLoader";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -125,5 +149,7 @@ namespace EverLoader.Forms
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }

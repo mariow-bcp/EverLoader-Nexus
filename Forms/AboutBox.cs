@@ -20,15 +20,16 @@ namespace EverLoader.Forms
             lblInfo.Text = lblInfo.Text.Replace("{ProductVersion}", Application.ProductVersion);
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //open EverSD website
             Process.Start(new ProcessStartInfo("https://eversd.com") { UseShellExecute = true });
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            //open EverSD Discord link
+            Process.Start(new ProcessStartInfo("https://eversd.com/discord") { UseShellExecute = true });
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -37,7 +38,8 @@ namespace EverLoader.Forms
                 if (++_sssI == _sss.Length)
                 {
                     _sssI = 0;
-                    Process.Start(new ProcessStartInfo(Encoding.UTF8.GetString(Convert.FromBase64String("aHR0cDovL2xvZGVydW5uZXJ3ZWJnYW1lLmNvbS9nYW1l"))) { UseShellExecute = true });
+                    MessageBox.Show("Never Forget\n10x SELECT", "2014 - 2023", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Process.Start(new ProcessStartInfo(Encoding.UTF8.GetString(Convert.FromBase64String("aHR0cDovL2xvZGVydW5uZXJ3ZWJnYW1lLmNvbS9nYW1l"))) { UseShellExecute = true });
                 }
             }
             else

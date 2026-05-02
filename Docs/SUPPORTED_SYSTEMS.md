@@ -57,6 +57,7 @@ Here is a list of all currently supported systems.
 | Nintendo Game Boy Color (.gbc)                   |   ✅   | Gambatte, mGBA                        |
 | Nintendo Game Boy Advance (.gba)                 |   ✅   | mGBA                                  |
 | Nintendo Pokemon Mini (.min)                     |   ❌   | PokeMini                              |
+| Nintendo DS (core and associations coming soon)  |   ❌   | Desmume                               |
 | Nintendo Game & Watch (.mgw)                     |   ❌   | gw                                    |
 | Sega Game Gear                                   |   ✅   | Genesis Plus GX, Genesis Plus GX Wide |
 | Sony PlayStation Portable (.iso, .cso)           |   ❌   | PPSSPP                                |
@@ -66,6 +67,11 @@ Here is a list of all currently supported systems.
 | Welback Mega Duck (Cougar Boy) (.bin)            |   ❌   | sameduck                              |
 | TIC-80 (.tic)                                    |   ❌   | tic80                                 |
 
+## Nexus Only (Stuff intended only for the upcoming Evercade Nexus)
+| Name                                             | Stock | RetroArch                             |
+|--------------------------------------------------|:-----:|---------------------------------------|
+| Nintendo GameCube / Wii (.elf, .iso, .gcm, .dol, .tgc, wbfs, .ciso, .gcz, .wad, .rvz) |   ❌   | Dolphin                                  |
+| Sony PlayStation 2 (core and associations coming soon) |   ❌   | LRPS2, Play!                                  |
 
 ## PORTS
 
@@ -74,3 +80,10 @@ Here is a list of all currently supported systems.
 | Doom (.wad)                      |   ❌   | PrBoom     |
 | Quake (.pak)                     |   ❌   | TyrQuake   |
 | Cannonball (OutRun Port) (.game) |   ❌   | cannonball |
+
+## Possible
+| Name                                             | Nexus Only? | RetroArch                             |
+|--------------------------------------------------|:-----:|---------------------------------------|
+| Microsoft Xbox |   ✅   | Xemu (Unofficial Core)                                  |
+| Nintendo 3DS |   ✅   | Citra, Citra Canary, Azahar (Unofficial Core)                                  |
+| PC Cloud Gaming |   ❌ (possibly)   | Moonlight (Unofficial Core)                                  |
